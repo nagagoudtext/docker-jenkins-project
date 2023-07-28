@@ -1,24 +1,29 @@
 version: "3"
 service:
-movies:
-  image: chinnigoud96/moviesservice:latest
-  ports:
-    - "90:80"
-  deploy:
-    replicas: 4
+  chicken:
+    image: chinnigoud96/chicken:latest
+    ports:
+      - "90:80"
+    deploy:
+      replicas: 4
 
-train:
-  image: chinnigoud96/trainservice:latest
-  ports:
-    - "91:80"
-  deploy:
-    replicas: 4
+  mutton:
+    image: chinnigoud96/mutton:latest
+    ports:
+      - "91:80"
+    deploy:
+      replicas: 4
 
-dth:
-  image: chinnigoud96/dthservice:latest
-  ports:
-    - "95:80"
-  deploy:
-    replicas: 4
+  fish:
+    image: chinnigoud96/fish:latest
+    ports:
+      - "92:80"
+    deploy:
+      replicas: 4
 
-
+  prawn:
+    image: chinnigoud96/prawn:latest
+    ports:
+      - "93:80"
+    deploy:
+      replicas: 4
