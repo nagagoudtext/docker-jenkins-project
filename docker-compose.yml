@@ -17,7 +17,7 @@ train:
 dth:
   image: chinnigoud96/dthservice:latest
   ports:
-    - "92:80"
+    - "95:80"
   deploy:
     replicas: 4
 
