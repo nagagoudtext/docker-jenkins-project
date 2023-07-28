@@ -21,9 +21,4 @@ dth:
   deploy:
     replicas: 4
 
-recharge:
-  image: chinnigoud96/rechargeservice:latest
-  ports:
-    - "93:80"
-  deploy:
-    replicas: 4
+
