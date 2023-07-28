@@ -1,0 +1,29 @@
+version: "3"
+service:
+movies:
+  image: chinnigoud96/moviesservice:latest
+  ports:
+    - "90:80"
+  deploy:
+    replicas: 4
+
+train:
+  image: chinnigoud96/trainservice:latest
+  ports:
+    - "91:80"
+  deploy:
+    replicas: 4
+
+dth:
+  image: chinnigoud96/dthservice:latest
+  ports:
+    - "92:80"
+  deploy:
+    replicas: 4
+
+recharge:
+  image: chinnigoud96/rechargeservice:latest
+  ports:
+    - "93:80"
+  deploy:
+    replicas: 4
